@@ -1,0 +1,12 @@
+#Configuration Dyno PocketMine !
+#Do not delete this line
+ConfigVersion: 1.0
+
+enabled: true
+
+dynos:
+ - enabled: false
+   ip: 127.0.0.1
+   port: 10102
+   description: "Dyno PM"
+   password: DynoPasswordHere

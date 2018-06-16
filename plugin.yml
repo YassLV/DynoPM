@@ -1,0 +1,7 @@
+name: DynoPM
+main: dynoPM\DynoPM
+version: 1.0
+load: STARTUP
+api: [
+   3.0.0-ALPHA12
+]
