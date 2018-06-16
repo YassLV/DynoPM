@@ -54,7 +54,7 @@ Download latest .phar and moved it to the PocketMine plugins folder <br/>
        
 ## Documentation
 
-Documentation Page: 
+Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
 
 ## Configuration
 ### Plugin
