@@ -15,7 +15,7 @@ Create a Network system for PocketMine easily without AsyncTask and MySQL !
 Download latest .phar here: [Github Release](https://github.com/MineBuilderFR/DynoPM/releases)
 
 ## Installation
-> __DynoPM needs Dyno to work__ <br/>
+> __DynoPM needs [Dyno](https://github.com/MineBuilderFR/Dyno) to work__ <br/>
 
 Download latest .phar and moved it to the PocketMine plugins folder <br/>
 
