@@ -12,22 +12,23 @@ Create a Network system for PocketMine easily without AsyncTask and MySQL !
 
 ## Where can i get latest .phar?
 
-Download .phar here: [Github Release](https://github.com/MineBuilderFR/DynoPM/releases)
+Download latest .phar here: [Github Release](https://github.com/MineBuilderFR/DynoPM/releases)
 
 ## Installation
 > __DynoPM needs Dyno to work__ <br/>
 
 Download latest .phar and moved it to the PocketMine plugins folder <br/>
 
-
 ## Plugin Example
 * __DynoMail__ : [Demo plugin for send Mail to player](https://github.com/MineBuilderFR/DynoMail)
 * __DynoNetworkCount__ : SOON
 
 ## Code Example
+
 > You can see more example code on the documentation! <br/>
 
 ### Connection to Dyno
+
     public function onEnable()
     {
         DynoPM::getInstance()->addPluginSyncWithDynoDescription($this, $dynoDesc);
@@ -37,7 +38,9 @@ Download latest .phar and moved it to the PocketMine plugins folder <br/>
         }
         $this->getServer()->getLogger()->info("Plugin Started !");
     }
+    
 ### Creation Base and Table and Put Keys
+
         $pk = new inputPacket();
         $final = new inputPacketLib();
         $final = $final
@@ -58,6 +61,7 @@ Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
 
 ## Configuration
 ### Plugin
+
 > Configuration in config.yml
 
 enabled: Enable DynoPM plugin or not
@@ -72,13 +76,17 @@ enabled: Enable DynoPM plugin or not
 
 ## Frequently Asked Questions
 ### What plugins can I create with DynoPM?
+
 With DynoPM you can create any kind of plugin using MySQL/YML, there is no limitation .
 
 ### Why use Dyno instead of MySQL for PocketMine?
+
 You do not have to use only dyno, you can use Mysql and Dyno. Dyno even has a function that automatically transfers the data sent to Dyno on Mysql and guarantees no lag on your PocketMine server.
 
 ### How does Dyno not create Lags?
+
 This means that you can send multiple Information Packet per second without having to wait more than 2 seconds for an Asynchronous response.
 
 ### Developing with Dyno is easy?
+
 You can look at the source of the example plugins.
