@@ -1,5 +1,9 @@
 # DynoPM
-Implementing Dyno for PocketMine
+<p align="center">
+    <img src="icon.png" width="200px" height="200px">
+</p>
+
+Implementing Dyno for PocketMine-MP
 
 ## Description
 Create a Network system for PocketMine easily without AsyncTask and MySQL ! 
