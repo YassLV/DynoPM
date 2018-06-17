@@ -66,7 +66,7 @@ Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
 
 enabled: Enable DynoPM plugin or not
 
- dynos: <br/>
+    dynos: <br/>
        - enabled: Enabled Dyno Client <br/>
        ip: IP Dyno <br/>
        port: Port Dyno <br/>
