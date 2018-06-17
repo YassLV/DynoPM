@@ -1,0 +1,3 @@
+[submodule "src/dynoLibPacket"]
+	path = src/dynoLibPacket
+	url = https://github.com/MineBuilderFR/DynoLibPacket
