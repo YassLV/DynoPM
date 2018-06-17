@@ -23,6 +23,10 @@ Download latest .phar and moved it to the PocketMine plugins folder <br/>
 * __DynoMail__ : [Demo plugin for send Mail to player](https://github.com/MineBuilderFR/DynoMail)
 * __DynoNetworkCount__ : SOON
 
+## Documentation
+
+Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
+
 ## Code Example
 
 > You can see more example code on the documentation! <br/>
@@ -55,10 +59,6 @@ Download latest .phar and moved it to the PocketMine plugins folder <br/>
         $pk->input = $final;
         $this->dyno->sendDataPacket($pk);
        
-## Documentation
-
-Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
-
 ## Configuration
 ### Plugin
 
