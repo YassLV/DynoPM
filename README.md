@@ -66,12 +66,12 @@ Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
 
 enabled: Enable DynoPM plugin or not
 
-    dynos: <br/>
-       - enabled: Enabled Dyno Client <br/>
-       ip: IP Dyno <br/>
-       port: Port Dyno <br/>
-       description: Description of your dyno (Allows to identify the DynoPM) <br/>
-       password: Dyno Password <br/>
+    dynos:
+       - enabled: Enabled Dyno Client
+       ip: IP Dyno
+       port: Port Dyno
+       description: Description of your dyno (Allows to identify the DynoPM)
+       password: Dyno Password
 
 
 ## Frequently Asked Questions
