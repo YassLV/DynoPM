@@ -56,20 +56,12 @@ class inputPacket extends DynoDataPacket
 
     protected function encodePayload()
     {
-        $this->putString($this->tunnelKey ?? self::uniqueTunnelKey());
+        $this->putString($this->tunnelKey ?? uniqid());
         $this->putString($this->input);
         $this->putString($this->pluginClass);
         $this->putString(json_encode($this->want));
         $this->putInt($this->getterType);
         $this->putBool($this->internalDynoWriteAsyncFile);
-    }
-
-    /**
-     * @return string
-     */
-    private static function uniqueTunnelKey(): string
-    {
-        return uniqid();
     }
 
     protected function decodePayload()
