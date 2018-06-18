@@ -60,14 +60,14 @@ class TickPluginsSyncWithDyno extends Task
             $plugin = $array["plugin"];
             if ($this->dynoPM->getDynoByDescription($description) !== null) {
                 if (!$plugin->isEnabled()) {
-                    $plugin->getPluginLoader()->enablePlugin($plugin);
+                    $this->dynoPM->getServer()->getPluginManager()->enablePlugin($plugin);
                     $this->dynoPM->getLogger()->info(
                         TextFormat::GREEN . "Plugin " . $pluginName . " enabled : Successful Dyno connection"
                     );
                 }
             } else {
                 if ($plugin->isEnabled()) {
-                    $plugin->getPluginLoader()->disablePlugin($plugin);
+                    $this->dynoPM->getServer()->getPluginManager()->disablePlugin($plugin);
                     $this->dynoPM->getLogger()->critical(
                         "Plugin " . $pluginName . " disabled : Dyno connection failed. 
                         The plugin will be automatically enable once Dyno will be accessible"
