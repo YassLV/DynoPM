@@ -10,7 +10,7 @@ Create a Network system for PocketMine easily without AsyncTask and MySQL !
 
 ## Version
 * __DynoPM Version__: 1.0
-* __For PocketMine-MP__: 3.0.0-ALPHA12
+* __For PocketMine-MP__: 3.0.0-ALPHA12, 3.0.0
 * __Current Protocol__: 1
 * __Config Version__: 1.0
 
