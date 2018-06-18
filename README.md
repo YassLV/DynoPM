@@ -41,7 +41,7 @@ Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
     {
         DynoPM::getInstance()->addPluginSyncWithDynoDescription($this, $dynoDesc);
         if (($this->dyno = DynoPM::getInstance()->getDynoByDescription($dynoDesc)) === null) {
-            $this->getServer->getPluginManager()->disablePlugin($this);
+            $this->getServer()->getPluginManager()->disablePlugin($this);
             return;
         }
         $this->getServer()->getLogger()->info("Plugin Started !");
