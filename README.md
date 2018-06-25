@@ -52,20 +52,21 @@ public function onEnable()
 ### Creation Base and Table and Put Keys
 
 ```php
-    $pk = new inputPacket();
-    $final = new inputPacketLib();
-    $final = $final
-        ->createBase("Base Test", [
-           BaseOptionsInterface::ONLY_IF_BASE_NOT_EXIST
-        ])
-        ->createTable("Table Test", TableOptionsInterface::ONLY_IF_TABLE_NOT_EXIST)
-        ->getTable("Table Test")
-        ->putBool("Bool !", true)
-        ->putString("String !", "This is a string")
-        ->finalInput();
-    $pk->input = $final;
-    $this->dyno->sendDataPacket($pk);
+$pk = new inputPacket();
+$final = new inputPacketLib();
+$final = $final
+    ->createBase("Base Test", [
+       BaseOptionsInterface::ONLY_IF_BASE_NOT_EXIST
+    ])
+    ->createTable("Table Test", TableOptionsInterface::ONLY_IF_TABLE_NOT_EXIST)
+    ->getTable("Table Test")
+    ->putBool("Bool !", true)
+    ->putString("String !", "This is a string")
+    ->finalInput();
+$pk->input = $final;
+$this->dyno->sendDataPacket($pk);
 ```
+
 ## Configuration
 ### Plugin
 
@@ -73,13 +74,14 @@ public function onEnable()
 
 enabled: Enable DynoPM plugin or not
 
-    dynos:
-       - enabled: Enabled Dyno Client
-       ip: IP Dyno
-       port: Port Dyno
-       description: Description of your dyno (Allows to identify the DynoPM)
-       password: Dyno Password
-
+```
+dynos:
+   - enabled: Enabled Dyno Client
+   ip: IP Dyno
+   port: Port Dyno
+   description: Description of your dyno (Allows to identify the DynoPM)
+   password: Dyno Password
+```
 
 ## Frequently Asked Questions
 ### What plugins can I create with DynoPM?
