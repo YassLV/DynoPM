@@ -37,32 +37,35 @@ Documentation Page: [Wiki](https://github.com/MineBuilderFR/DynoPM/wiki)
 
 ### Connection to Dyno
 
-    public function onEnable()
-    {
-        DynoPM::getInstance()->addPluginSyncWithDynoDescription($this, $dynoDesc);
-        if (($this->dyno = DynoPM::getInstance()->getDynoByDescription($dynoDesc)) === null) {
-            $this->getServer()->getPluginManager()->disablePlugin($this);
-            return;
-        }
-        $this->getServer()->getLogger()->info("Plugin Started !");
+```php
+public function onEnable()
+{
+    DynoPM::getInstance()->addPluginSyncWithDynoDescription($this, $dynoDesc);
+    if (($this->dyno = DynoPM::getInstance()->getDynoByDescription($dynoDesc)) === null) {
+         $this->getServer()->getPluginManager()->disablePlugin($this);
+         return;
     }
+    $this->getServer()->getLogger()->info("Plugin Started !");
+}
+```
     
 ### Creation Base and Table and Put Keys
 
-        $pk = new inputPacket();
-        $final = new inputPacketLib();
-        $final = $final
-            ->createBase("Base Test", [
-                BaseOptionsInterface::ONLY_IF_BASE_NOT_EXIST
-            ])
-            ->createTable("Table Test", TableOptionsInterface::ONLY_IF_TABLE_NOT_EXIST)
-            ->getTable("Table Test")
-            ->putBool("Bool !", true)
-            ->putString("String !", "This is a string")
-            ->finalInput();
-        $pk->input = $final;
-        $this->dyno->sendDataPacket($pk);
-       
+```php
+    $pk = new inputPacket();
+    $final = new inputPacketLib();
+    $final = $final
+        ->createBase("Base Test", [
+           BaseOptionsInterface::ONLY_IF_BASE_NOT_EXIST
+        ])
+        ->createTable("Table Test", TableOptionsInterface::ONLY_IF_TABLE_NOT_EXIST)
+        ->getTable("Table Test")
+        ->putBool("Bool !", true)
+        ->putString("String !", "This is a string")
+        ->finalInput();
+    $pk->input = $final;
+    $this->dyno->sendDataPacket($pk);
+```
 ## Configuration
 ### Plugin
 
