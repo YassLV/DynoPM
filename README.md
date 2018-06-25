@@ -58,7 +58,9 @@ $final = $final
     ->createBase("Base Test", [
        BaseOptionsInterface::ONLY_IF_BASE_NOT_EXIST
     ])
-    ->createTable("Table Test", TableOptionsInterface::ONLY_IF_TABLE_NOT_EXIST)
+    ->createTable("Table Test", [
+       TableOptionsInterface::ONLY_IF_TABLE_NOT_EXIST
+    ])
     ->getTable("Table Test")
     ->putBool("Bool !", true)
     ->putString("String !", "This is a string")
