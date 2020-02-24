@@ -15,7 +15,7 @@
  * This program is based on PocketMine Software and Synapse.
  *
  * @copyright (c) 2018
- * @author Y&SS-MineBuilderFR
+ * @author Y$SS-YassLV
  */
 
 declare(strict_types=1);
